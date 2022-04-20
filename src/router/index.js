@@ -6,6 +6,9 @@ import myWelcome from '../components/myWelcome'
 
 import myUsers from '../components/user/myUsers'
 
+import myRights from '../components/power/myRights'
+import myRoles from '../components/power/myRoles'
+
 import VueRouter from 'vue-router'
 
 // 应用插件
@@ -24,7 +27,9 @@ const router = new VueRouter({
       redirect: '/welcome',
       children: [
         { path: '/welcome', component: myWelcome },
-        { path: '/users', component: myUsers }
+        { path: '/users', component: myUsers },
+        { path: '/rights', component: myRights },
+        { path: '/roles', component: myRoles }
       ]
     }
   ]
