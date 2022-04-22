@@ -9,6 +9,8 @@ import myUsers from '../components/user/myUsers'
 import myRights from '../components/power/myRights'
 import myRoles from '../components/power/myRoles'
 
+import myCate from '../components/goods/myCate'
+
 import VueRouter from 'vue-router'
 
 // 应用插件
@@ -29,7 +31,8 @@ const router = new VueRouter({
         { path: '/welcome', component: myWelcome },
         { path: '/users', component: myUsers },
         { path: '/rights', component: myRights },
-        { path: '/roles', component: myRoles }
+        { path: '/roles', component: myRoles },
+        { path: '/categories', component: myCate }
       ]
     }
   ]
