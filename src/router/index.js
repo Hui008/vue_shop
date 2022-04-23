@@ -10,6 +10,7 @@ import myRights from '../components/power/myRights'
 import myRoles from '../components/power/myRoles'
 
 import myCate from '../components/goods/myCate'
+import myParams from '../components/goods/myParams'
 
 import VueRouter from 'vue-router'
 
@@ -32,7 +33,8 @@ const router = new VueRouter({
         { path: '/users', component: myUsers },
         { path: '/rights', component: myRights },
         { path: '/roles', component: myRoles },
-        { path: '/categories', component: myCate }
+        { path: '/categories', component: myCate },
+        { path: '/params', component: myParams }
       ]
     }
   ]

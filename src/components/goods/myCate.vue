@@ -285,7 +285,7 @@ export default {
       this.addCateForm.cat_level = 0
     },
     // 监听编辑按钮
-    async showeditCateFormDialog(id) {
+    async showCateFormDialog(id) {
       const { data: res } = await this.$http.get('categories/' + id)
       if (res.meta.status !== 200) {
         console.log(res.meta.status)
