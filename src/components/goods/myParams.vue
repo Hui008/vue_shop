@@ -47,8 +47,8 @@
                   v-model="scope.row.inputValue"
                   ref="saveTagInput"
                   size="small"
-                  @keyup.enter.native="handleInputConfirm(scope.row)"
-                  @blur="handleInputConfirm(scope.row)">
+                  @keyup.enter.native="handleInputConfirm1(scope.row)"
+                  @blur="handleInputConfirm2(scope.row)">
                 </el-input>
                 <el-button v-else class="button-new-tag" size="small" @click="showInput(scope.row)">+ New Tag</el-button>
               </template>
@@ -82,8 +82,8 @@
                   v-model="scope.row.inputValue"
                   ref="saveTagInput"
                   size="small"
-                  @keyup.enter.native="handleInputConfirm(scope.row)"
-                  @blur="handleInputConfirm(scope.row)">
+                  @keyup.enter.native="handleInputConfirm1(scope.row)"
+                  @blur="handleInputConfirm2(scope.row)">
                 </el-input>
                 <el-button v-else class="button-new-tag" size="small" @click="showInput(scope.row)">+ New Tag</el-button>
               </template>
@@ -304,7 +304,7 @@ export default {
       this.$message.success('删除权限成功')
     },
     // 文本框失去焦点或enter键触发
-    async handleInputConfirm(row) {
+    async handleInputConfirm1(row) {
       if (row.inputValue.trim().length === 0) {
         row.inputValue = ''
         row.inputVisible = false
@@ -314,6 +314,20 @@ export default {
       row.attr_vals.push(row.inputValue.trim())
       row.inputValue = ''
       row.inputVisible = false
+      console.log('-----------enter')
+      this.saveAttrVals(row)
+    },
+    async handleInputConfirm2(row) {
+      if (row.inputValue.trim().length === 0) {
+        row.inputValue = ''
+        row.inputVisible = false
+        // eslint-disable-next-line no-useless-return
+        return
+      }
+      row.attr_vals.push(row.inputValue.trim())
+      row.inputValue = ''
+      row.inputVisible = false
+      console.log('-----------enter')
       this.saveAttrVals(row)
     },
     // 点击按钮，展示文本输入框

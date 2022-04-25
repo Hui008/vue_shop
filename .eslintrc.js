@@ -17,6 +17,7 @@ module.exports = {
     'prefer-const': 'off',
     'generator-star-spacing': 'off',
     'no-unused-vars': 'off',
-    'no-irregular-whitespace': 'off'
+    'no-irregular-whitespace': 'off',
+    'no-tabs': 'off'
   }
 }

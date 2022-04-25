@@ -11,6 +11,8 @@ import myRoles from '../components/power/myRoles'
 
 import myCate from '../components/goods/myCate'
 import myParams from '../components/goods/myParams'
+import myList from '../components/goods/myList'
+import myAdd from '../components/goods/myAdd'
 
 import VueRouter from 'vue-router'
 
@@ -34,7 +36,9 @@ const router = new VueRouter({
         { path: '/rights', component: myRights },
         { path: '/roles', component: myRoles },
         { path: '/categories', component: myCate },
-        { path: '/params', component: myParams }
+        { path: '/params', component: myParams },
+        { path: '/goods', component: myList },
+        { path: '/goods/add', component: myAdd }
       ]
     }
   ]

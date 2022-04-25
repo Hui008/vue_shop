@@ -27,3 +27,12 @@ html, body, #app {
 .el-cascader-panel {
   max-height: 200px;
 }
+
+.el-form-item__label,
+.el-cascader {
+  display: flex !important;
+}
+
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+  height: 300px;
+}
