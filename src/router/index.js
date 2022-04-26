@@ -16,6 +16,8 @@ import myAdd from '../components/goods/myAdd'
 
 import myOrder from '../components/order/myOrder'
 
+import myReport from '../components/report/myReport'
+
 import VueRouter from 'vue-router'
 
 // 应用插件
@@ -41,7 +43,8 @@ const router = new VueRouter({
         { path: '/params', component: myParams },
         { path: '/goods', component: myList },
         { path: '/goods/add', component: myAdd },
-        { path: '/orders', component: myOrder }
+        { path: '/orders', component: myOrder },
+        { path: '/reports', component: myReport }
       ]
     }
   ]
