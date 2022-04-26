@@ -1,24 +1,5 @@
-# vue_shop
+## git基本操作
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
++ 查看当前所处分支：git branch
++ 创建一个新的分支：git checkout -b XXX(新分支的名字)
++ 向云端推送新的分支：git push -u origin XXX(新分支的名字)

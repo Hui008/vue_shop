@@ -14,6 +14,8 @@ import myParams from '../components/goods/myParams'
 import myList from '../components/goods/myList'
 import myAdd from '../components/goods/myAdd'
 
+import myOrder from '../components/order/myOrder'
+
 import VueRouter from 'vue-router'
 
 // 应用插件
@@ -38,7 +40,8 @@ const router = new VueRouter({
         { path: '/categories', component: myCate },
         { path: '/params', component: myParams },
         { path: '/goods', component: myList },
-        { path: '/goods/add', component: myAdd }
+        { path: '/goods/add', component: myAdd },
+        { path: '/orders', component: myOrder }
       ]
     }
   ]
